@@ -7,7 +7,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 // deleteDup()
 dBService.saveData()
-const port = process.env.PORT || 8888
+const port = process.env.PORT || 8889
 const listening = app.listen(port, () => {
     console.log(`Server is running on port ${listening.address().port}`)
 })
